@@ -49,3 +49,4 @@ class Solution(object):
             return True
         return recursive(n)
 # 이렇게 짜면 test는 돌아는 가는데 문제는 runtime error가 뜬다.
+"""
