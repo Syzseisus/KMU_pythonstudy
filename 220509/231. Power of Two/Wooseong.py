@@ -25,7 +25,7 @@ class Solution:
         
         # 나머지는 recursive 돌려보기
         else:
-            return div(n
+            return div(n)
                        
 # solution2: binary
 '''
