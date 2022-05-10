@@ -5,9 +5,7 @@ class Solution:
         def reverse(i, j, s):
             if i >= j:
                 return 
-            temp = s[i]
-            s[i] = s[j]
-            s[j] = temp
-            return reverse(i+1, j-1, s)
+            s[i], s[j] = s[j], s[i]
+            reverse(i+1, j-1, s)
         reverse(i, j, s)
     
