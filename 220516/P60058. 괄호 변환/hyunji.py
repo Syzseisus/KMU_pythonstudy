@@ -54,8 +54,6 @@ def solution(p):
         코멘트:
         내가 쓴 list comprehension + join 활용하기
         1600개짜리 string 기준 0.00410 vs 0.00054로 10배 가까이 느림
-        
-        그리고 애초에 for문에서 for uu in u[1:-1]로 자르는 것도 좋을듯
         '''
         for uu in u:
             if uu == '(': 
