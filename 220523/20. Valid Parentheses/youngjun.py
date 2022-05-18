@@ -6,10 +6,10 @@ class Solution:
         
         # 문자열 s를 순환하며 계산함
         for ch in s:
-            # 열린괄호 stack에 추가
+            # 열린 괄호 stack에 추가
             if ch == '(' or ch == '{' or ch == '[':
                 stack.append(ch)
-            # 닫힌 괄호가 나올 경우, stack의 top에 있는 열린괄호와 짝이 맞으면 stack에 저장한 열린 괄호 pop, 이때 stack에 원소가 남아있어야 함
+            # 닫힌 괄호가 나올 경우, stack의 top에 있는 열린 괄호와 짝이 맞으면 stack에 저장한 열린 괄호 pop, 이때 stack에 원소가 남아있어야 함
             elif (len(stack) != 0 and stack[-1] == '(' and ch == ')') or (len(stack) != 0 and stack[-1] == '{' and ch == '}') or (len(stack) != 0 and stack[-1] == '[' and ch == ']'):
                 stack.pop()
             # 위의 경우에 맞지 않을 경우 False 반환
