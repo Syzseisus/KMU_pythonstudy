@@ -12,7 +12,7 @@ def solution(progresses, speeds):
             # 만약 제일 먼저 배포되어야 하는 작업의 진도가 완료된 경우
             if progresses[0] >= 100:
                 cnt += 1
-                progresses.pop(0)
+                progresses.pop(0) #어이어이 popleft를 쓰라구~!
                 speeds.pop(0)
             else: 
                 # print(progresses)
