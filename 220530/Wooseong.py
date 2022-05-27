@@ -75,3 +75,27 @@ def solution(progresses, speeds):
     answer.append(distribute)
             
     return answer
+
+# 백준 문제
+from collections import deque
+
+# std input
+N = int(input())
+
+# 1부터 N까지 카드 쌓기
+queue = deque([i + 1 for i in range(N)])
+
+# 한 장 남을 때까지 반복
+while len(queue) > 1:
+    # 1. 맨 위 버림
+    queue.popleft()
+    # 버려서 한 장 남으면 break
+    if len(queue) == 1:
+        break
+    # 2. 맨 위 뽑아서
+    temp = queue.popleft()
+    # 3. 맨 아래에 넣음
+    queue.append(temp)
+
+# 한 장 남은 거 print
+print(queue[0])
