@@ -47,7 +47,7 @@ import math
 
 def solution(progresses, speeds):
     # 걸리는 날 계산하기
-    days = [math.ceil((100 - p)/s) for p, s in zip(progresses, speeds)]
+    days = [math.ceil((100 - p) / s) for p, s in zip(progresses, speeds)]
     
     # 정답 list
     answer = []
